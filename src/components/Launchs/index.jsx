@@ -4,7 +4,7 @@ import Launch from './components/launch';
 
 function Launchs(params) {
   return(
-  <Container style={{paddingTop: '1.1%'}}>
+  <Container style={{paddingTop: '80px'}}>
     <Row>
     {launchsFile.map((data) => (
       <Col lg={6} sm={12}>
