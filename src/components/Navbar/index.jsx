@@ -7,6 +7,7 @@ import TelegramIcon from '@material-ui/icons/Telegram';
 import LayersIcon from '@material-ui/icons/Layers';
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import MenuIcon from '@material-ui/icons/Menu';
+import MenuOpenIcon from '@material-ui/icons/MenuOpen';
 
 import Logo from '../../assets/logo.png'
 import { useState } from 'react';
@@ -39,7 +40,7 @@ function Navd() {
       <Navbar style={{paddingTop: 20,backgroundColor : '#1c1f2b'}} variant="dark" expand="sm" fixed="top">
       
       <Navbar.Brand href="#home"><img alt="RetroLogo" style={{width: 200}} src={Logo}></img></Navbar.Brand>
-      <Button className="d-lg-none d-md-none menu-button" onClick={open? closeNav: openNav} ><MenuIcon/> </Button>
+      <Button className="d-lg-none d-md-none menu-button" onClick={open? closeNav: openNav} >{open? <MenuOpenIcon/>: <MenuIcon/>} </Button>
 
 
       <Navbar.Collapse id="sdsds">
